@@ -1,10 +1,10 @@
-# atom-value
+# Express
 
 ```
-npm run start
+node index.js
 ```
 
-### GET /
+### GET /supply
 
 **200**: Returns the total supply of ATOM
 
