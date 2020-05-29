@@ -1,15 +1,13 @@
 const fetch = require('node-fetch');
 
 const getData = async () => {
-	const response = await fetch('https://api.cosmos.network/supply/total');
+  const response = await fetch('https://api.cosmos.network/supply/total');
   const parsed = await response.json();
 
-  const final = parsed.result
-    .map(b => ({
-      total_supply: b.amount / 1000000
-    }))
+  const final = parsed.result.map(b => (b.amount / 1000000))
+  const totalSupply = Number(final)
 
-  return final
+  return totalSupply
 }
 
 module.exports = async (req, res) => {

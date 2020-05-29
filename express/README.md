@@ -8,10 +8,6 @@ node index.js
 
 **200**: Returns the total supply of ATOM
 
-```json
-[
-  {
-    "total_supply": 256001235.306406
-  }
-]
+```
+256001235.306406
 ```
